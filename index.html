@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="input">
+        <input type="text" id="play1" onchange="handeluser1(id)">
+        <input type="text" id="play2" onchange="handeluser2(id)">
+    </div>
+    <div class="intro">
+        <div id="player1">Player 1</div>
+        <div id="player2">Player 2</div>
+    </div>
+    <button onclick="restart()">Restart</button>
+    <div id="result"></div> 
+    <main>        
+        <div id="col1">
+            <p class="first top" onclick="col('col1_row1')" id="col1_row1"></p>
+            <p class="first" onclick="col('col1_row2')" id="col1_row2"></p>
+            <p class="first bottom" onclick="col('col1_row3')" id="col1_row3"></p>
+        </div>
+        <div id="col2">
+            <p class="second top" onclick="col('col2_row1')" id="col2_row1"></p>
+            <p  onclick="col('col2_row2')" id="col2_row2"></p>
+            <p class="second bottom" onclick="col('col2_row3')" id="col2_row3"></p>
+        </div>
+        <div id="col3">
+            <p class="third top" onclick="col('col3_row1')" id="col3_row1"></p>
+            <p class="third" onclick="col('col3_row2')" id="col3_row2"></p>
+            <p class="third bottom" onclick="col('col3_row3')" id="col3_row3"></p>
+        </div>
+    </main>   
+</body>
+<script src="app.js"></script>
+</html>
